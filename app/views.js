@@ -57,7 +57,7 @@ export function home() {
   <section>
     <h2>Largest provinces</h2>
     <p class="lede">Java holds more than half the country: the five largest provinces
-    alone are home to about 152 million people.</p>
+    alone are home to about 158 million people.</p>
     <table class="data-table">
       <thead><tr><th>Province</th><th>Capital</th><th>Population (2024)</th><th>Density /km²</th><th></th></tr></thead>
       <tbody>${topFive.map((p) => `<tr><td>${p.name}</td><td>${p.capital}</td><td>${p.pop.toFixed(2)}m</td><td>${density(p).toLocaleString('en-US')}</td><td><a href="#/province/${p.slug}">Details →</a></td></tr>`).join('')}</tbody>
@@ -98,7 +98,7 @@ export function population() {
 
 export function economy() {
   return `
-  ${head('Economy', 'GDP reached Rp22,139 trillion in 2024 and grew 5.03% in real terms — the fifth year in a row above 5% except for the 2020 pandemic contraction. GDP per capita was about US$4,960.')}
+  ${head('Economy', 'GDP reached Rp22,139 trillion in 2024 and grew 5.03% in real terms — above 5% for the third year in a row, after 5.31% in 2022 and 5.05% in 2023. GDP per capita was about US$4,960.')}
   <section class="grid-2">
     <div class="panel">
       <h2>GDP growth, 2020–2024</h2>
